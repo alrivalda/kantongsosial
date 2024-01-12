@@ -17,3 +17,6 @@ Pegiat sosial dapat membuat kampanye penggalangan dana untuk kegiatan sosial mer
 Calon pemberi dana (CSR, Donatur, dan lain sebagainya) dapat menemukan kegiatan sosial yang sesuai dengan nilai-nilai dan tujuan perusahaan. Calon pemberi dana dapat memilih proyek, menentukan jumlah donasi, dan memberikan pesan dukungan dengan proses yang mudah.
 
 KantongSosial berupaya menciptakan dampak positif yang nyata di bidang sosial dengan memberikan akses pendanaan. Melalui platform ini, kami membuka peluang untuk menggalang dukungan, merangkul keragaman sosial, dan membangun jembatan kuat antara korporat dan masyarakat, serta menciptakan lingkungan dimana kebaikan dapat tumbuh dan berkelanjutan.
+
+
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/campaign-detail-api.png?raw=true)
