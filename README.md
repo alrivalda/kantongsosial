@@ -1,7 +1,9 @@
 
 # Kelompok FUNDHUB
 **Aplikasi Kantong Sosial**
+
 **Deskripsi	: Platform penghubung CSR/Donatur dengan pegiat sosial/komunitas.**
+
 **Banchmark	: kitabisa, dompetdhuafa**
 
 Deskripsi	: 
