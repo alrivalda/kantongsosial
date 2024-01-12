@@ -1,9 +1,8 @@
 
 # Kelompok FUNDHUB
-** Aplikasi Kantong Sosial**
-
-** Deskripsi	: Platform penghubung CSR/Donatur dengan pegiat sosial/komunitas. **
-** Banchmark	: kitabisa, dompetdhuafa **
+**Aplikasi Kantong Sosial**
+**Deskripsi	: Platform penghubung CSR/Donatur dengan pegiat sosial/komunitas.**
+**Banchmark	: kitabisa, dompetdhuafa**
 
 Deskripsi	: 
 KantongSosial adalah platform crowdfunding yang menghubungkan antara pegiat sosial (seperti komunitas sosial) dengan pemberi dana seperti CSR, donatur, dan sponsor. Platform ini memberikan akses pendanaan bagi para pegiat sosial yang sedang mencari dana untuk kegiatan sosialnya. Platform ini juga memberikan kemudahan bagi calon pemberi dana untuk menemukan proyek-proyek yang sesuai dengan nilai dan visi mereka, sambil mendapatkan transparansi penuh terkait penggunaan dana.
