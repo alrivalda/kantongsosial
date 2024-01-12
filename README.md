@@ -18,5 +18,30 @@ Calon pemberi dana (CSR, Donatur, dan lain sebagainya) dapat menemukan kegiatan 
 
 KantongSosial berupaya menciptakan dampak positif yang nyata di bidang sosial dengan memberikan akses pendanaan. Melalui platform ini, kami membuka peluang untuk menggalang dukungan, merangkul keragaman sosial, dan membangun jembatan kuat antara korporat dan masyarakat, serta menciptakan lingkungan dimana kebaikan dapat tumbuh dan berkelanjutan.
 
+Fitur Backend
+1. Login
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/login-api.png?raw=true)
 
+2. Register
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/register-api.png?raw=true)
+
+3. Profile
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/profile-api.png?raw=true)
+
+4. Create Campaign
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/create-campaign-api.png?raw=true)
+
+5. Create Campaign Descryption
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/create-campaign-descryption-api.png?raw=true)
+
+6. Create Canpaign Penanggung Jawab
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/create-penanggungjawab-api.png?raw=true)
+
+7. Campaign Detail
 ![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/campaign-detail-api.png?raw=true)
+
+8. Get All Campaigns
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/get-all-campaign-api.png?raw=true)
+
+9. Get All Categories
+![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/get-all-category-api.png?raw=true)
