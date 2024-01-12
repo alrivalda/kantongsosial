@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-KantongsosialFeApplication<kantongsosial-fe>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gdsc.fundhub.kantongsosialfe.KantongsosialFeApplication",
+            "projectName": "kantongsosial-fe",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-KantongsosialUserApplication<kantongsosial-user>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gdsc.fundhub.kantongsosialuser.KantongsosialUserApplication",
+            "projectName": "kantongsosial-user",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-KantongsosialCampaignApplication<kantongsosial-campaign>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "gdsc.fundhub.kantongsosialcampaign.KantongsosialCampaignApplication",
+            "projectName": "kantongsosial-campaign",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
