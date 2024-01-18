@@ -45,3 +45,6 @@ Fitur Backend
 
 9. Get All Categories
 ![alt text](https://github.com/alrivalda/kantongsosial/blob/master/Screenshoot/get-all-category-api.png?raw=true)
+
+
+link Figma : https://www.figma.com/file/hlRLxPFNhf664N0tvwXijK/kantong-sosial-project?type=design&node-id=148%3A512&mode=design&t=RKw43ZxXer5i2lFv-1
