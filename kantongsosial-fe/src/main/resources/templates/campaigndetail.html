@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <nav th:replace="~{fragments/navbar-notLoggedIn :: navbar-A}"></nav>
+    <div class="flex justify-center mt-4">
+        <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="https://smkwiraharapan.sch.id/wp-content/uploads/2021/08/1-1.png"
+                    alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                        th:text="${campaignDTO.program}"></h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+                    th:text="'Donasi terkumpul Rp.' + ${campaignDTO.balance} + ' dengan target '  + ${campaignDTO.dana}">
+                </p>
+                <p class="mb-3 text-gray-500 dark:text-gray-400" th:text="${campaignDTO.acara}"></p>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white"
+                        th:text="${campaignDTO.deadline}"></span>
+                    <a href="#"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        th:href="@{/}">Donate</a>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400" th:text="${campaignDTO.judul}"></p>
+                <p class="text-gray-500 dark:text-gray-400" th:text="${campaignDTO.identitas}"></p>
+                <p class=" text-gray-500 dark:text-gray-400" th:text="${campaignDTO.profil}"></p>
+                <p class=" text-gray-500 dark:text-gray-400" th:text="${campaignDTO.acara}"></p>
+                <p class=" text-gray-500 dark:text-gray-400" th:text="${campaignDTO.masalah}"></p>
+                <p class=" text-gray-500 dark:text-gray-400" th:text="${campaignDTO.penerima}"></p>
+                <p class="text-gray-500 dark:text-gray-400" th:text="${campaignDTO.cta}"></p>
+            </div>
+
+        </div>
+
+    </div>
+</body>

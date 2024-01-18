@@ -26,6 +26,7 @@ public class WebSecurityConfig  {
                         .requestMatchers(new AntPathRequestMatcher("/login")).permitAll()
                         .requestMatchers(new AntPathRequestMatcher("/")).permitAll()
                         .requestMatchers(new AntPathRequestMatcher("/all-campaign")).permitAll()
+                        .requestMatchers(new AntPathRequestMatcher("/campaign")).permitAll()
                         .anyRequest().authenticated())
                 .formLogin((form) -> form
                         .loginPage("/login")

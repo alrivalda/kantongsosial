@@ -14,8 +14,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import gdsc.fundhub.kantongsosialfe.dto.request.CampaignDetailRequestDTO;
 import gdsc.fundhub.kantongsosialfe.dto.request.LoginDTO;
 import gdsc.fundhub.kantongsosialfe.dto.request.RegisterDTO;
+import gdsc.fundhub.kantongsosialfe.dto.response.CampaignDTO;
+import gdsc.fundhub.kantongsosialfe.restservice.CampaignService;
 import gdsc.fundhub.kantongsosialfe.restservice.UserRestService;
 import gdsc.fundhub.kantongsosialfe.security.jwt.JwtUtils;
 import jakarta.servlet.http.HttpSession;
@@ -37,6 +40,7 @@ import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.RequestParam;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.UUID;
 
 
 
@@ -49,6 +53,9 @@ public class PageController {
     
     @Autowired
     JwtUtils jwtUtils;
+
+    @Autowired
+    CampaignService campaignService;
 
     @GetMapping("/")
     public String landingPage(Model model) {
@@ -118,6 +125,15 @@ public class PageController {
     @GetMapping("/all-campaign")
     public String getMethodName(Model model) {
         return "all-campaign";
+    }
+
+    @GetMapping("/campaign")
+    public String getCampaignDetail(Model model) {
+        CampaignDetailRequestDTO campaignDetailRequestDTO = new CampaignDetailRequestDTO();
+        campaignDetailRequestDTO.setId(UUID.fromString("04452f2b-5302-4f08-ae1b-e9b6b9ea72b1"));
+        CampaignDTO campaignDTO = campaignService.getCampaignDTO(campaignDetailRequestDTO);
+        model.addAttribute("campaignDTO", campaignDTO);
+        return "campaigndetail";
     }
     
 }
