@@ -1,5 +1,7 @@
 package gdsc.fundhub.kantongsosialuser.restservice;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -66,7 +68,13 @@ public class UserServiceImpl implements UserService {
             user.setUsername(createUserRequestDTO.getUsername());
             user.setEmail(createUserRequestDTO.getEmail());
             user.setPassword(encrypt(createUserRequestDTO.getPassword()));
-            user.setDateOfBirth(createUserRequestDTO.getDateOfBirth());
+             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            try {
+                user.setDateOfBirth(dateFormat.parse(createUserRequestDTO.getDateOfBirth()));
+            } catch (ParseException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             user.setFirstName(createUserRequestDTO.getFirstName());
             user.setLastName(createUserRequestDTO.getLastName());
             userDb.save(user);

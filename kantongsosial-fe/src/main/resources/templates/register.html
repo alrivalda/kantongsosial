@@ -14,47 +14,47 @@
 
         <div
             class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto">
-            <form class=" mx-auto py-4">
+            <form class=" mx-auto py-4"  th:action="@{/register}" th:object="${registerDTO}" method="post">
                 <h5 class="flex justify-center text-2xl font-medium text-blue-500 dark:text-white">Create to Your Account</h5>
                 <div class="mb-5 pt-5">
                     <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                         First Name</label>
-                    <input type="text" id="firstName"
+                    <input type="text" th:field="*{firstName}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="First Name" required>
                 </div>
                 <div class="mb-5">
                     <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                         Last Name</label>
-                    <input type="text" id="lastName"
+                    <input type="text" th:field="*{lastName}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Last Name" required>
                 </div>
                 <div class="mb-5">
                     <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                         username</label>
-                    <input type="username" id="username"
+                    <input type="username" th:field="*{username}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="username" required>
                 </div>
                 <div class="mb-5">
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                         email</label>
-                    <input type="email" id="email"
+                    <input type="email" th:field="*{email}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="name@flowbite.com" required>
                 </div>
                 <div class="mb-5">
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                         password</label>
-                    <input type="password" id="password"
+                    <input type="password" th:field="*{password}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
                 </div>
                 <div class="mb-5">
                     <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Birth
                         Date</label>
-                    <input type="date" id="date"
+                    <input type="date" th:field="*{dateOfBirth}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
                 </div>

@@ -1,17 +1,15 @@
-package gdsc.fundhub.kantongsosialuser.dto.request;
+package gdsc.fundhub.kantongsosialfe.dto.request;
 
 import java.util.Date;
 
-import jakarta.persistence.Column;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateUserRequestDTO {
+@Data
+public class RegisterDTO {
     private String username;
     private String password;
     private String email;

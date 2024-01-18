@@ -3,6 +3,7 @@ package gdsc.fundhub.kantongsosialfe.restservice;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import gdsc.fundhub.kantongsosialfe.dto.request.LoginDTO;
+import gdsc.fundhub.kantongsosialfe.dto.request.RegisterDTO;
 import gdsc.fundhub.kantongsosialfe.dto.response.JwtResponseDTO;
 import gdsc.fundhub.kantongsosialfe.security.jwt.JwtUtils;
 
@@ -30,6 +31,14 @@ public class UserRestServiceImpl implements UserRestService {
         
        return  response;
 
+    }
+
+    @Override
+    public JwtResponseDTO register(RegisterDTO registerDTO) {
+        var response = this.webClient.post().uri("/api/auth/register").bodyValue(registerDTO).retrieve()
+                .bodyToMono(JwtResponseDTO.class).block();
+        
+       return  response;
     }
 
 }
